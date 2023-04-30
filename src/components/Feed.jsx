@@ -5,7 +5,7 @@ import VideoFeed from './VideoFeed'
 
 const Feed = ({theme}) => {
 
-    const styles = JSON.parse(localStorage.getItem('theme')) === 'light' ? 'bg-white text-black' : 'bg-black text-white' ;
+    const styles = theme === 'light' ? 'bg-white ' : 'bg-black ' ;
 
     
     const [videos,setVideos] = useState(null)
