@@ -47,7 +47,7 @@ const VideoCard = ({video}) => {
     return (
     loading ? <div className=' w-[100%] h-[100%] bg-black opacity-5' /> : 
 
-    <div className='lg:h-[360px] lg:w-[360px] xs:h-[360px] xs:w-[260px] flex items-center justify-start gap-[10px] flex-col m-[10px]'>
+    <div className='h-[340px] xs:w-[80%] md:w-[360px]  flex items-center justify-start gap-[10px] flex-col m-[10px]'>
 
         <div className='h-[200px]  w-[100%]  rounded-xl overflow-hidden'>
             <Link to={`/video/${videoId}`}>

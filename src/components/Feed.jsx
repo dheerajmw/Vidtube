@@ -32,7 +32,7 @@ useEffect(()=>{
     
   return (
     loading ? <div className=' w-[100%] h-[100%] bg-black opacity-5' /> : 
-        <div className={`w-100% flex flex-row relative top-[60px] ${styles} `}>
+        <div className={`w-100% flex xs:flex-col md:flex-row  relative top-[60px] ${styles} `}>
             <Sidebar selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} theme={theme}/>
             <VideoFeed videos = {videos} theme={theme}/>
             

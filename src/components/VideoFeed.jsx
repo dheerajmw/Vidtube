@@ -3,7 +3,9 @@ import ChannelCard from './ChannelCard'
 import { fetchFromApi } from './fetchFromApi'
 import VideoCard from './VideoCard'
 
-const VideoFeed = ({videos}) => {
+const VideoFeed = ({videos,theme}) => {
+  const styles = theme === 'light' ? 'bg-white text-black' : 'bg-black text-white' ;
+
   const [loading,setLoading] = useState(true)
   useEffect(()=>{
     videos !== undefined &&
@@ -14,7 +16,7 @@ const VideoFeed = ({videos}) => {
   return (
     loading ? <div className=' w-[100%] h-[100%] bg-black opacity-5' /> : 
 
-    <div className='w-[100%] h-[100%]  flex flex-wrap justify-around items-center xs:p-[5px] md:p-[20px]'>
+    <div className={`w-[100%]  h-[100%] ${styles} flex flex-wrap justify-around items-center xs:p-[5px] md:p-[20px]`}>
         {videos.map((item,idx)=>( 
             <>
             
