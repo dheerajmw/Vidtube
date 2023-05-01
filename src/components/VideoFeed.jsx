@@ -20,7 +20,7 @@ const VideoFeed = ({videos,theme}) => {
         {videos.map((item,idx)=>( 
             <>
             
-            {item?.id?.videoId && <VideoCard video={item}/>}
+            {item?.id?.videoId && <VideoCard video={item} theme={theme}/>}
             {item?.id?.channelId && <ChannelCard channel={item}/>}
             {item?.id?.PlaylistId && <ChannelCard />}
             </>

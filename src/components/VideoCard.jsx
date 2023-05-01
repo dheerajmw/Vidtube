@@ -4,7 +4,7 @@ import { demoProfilePicture, demoThumbnailUrl } from './utils'
 import { fetchFromApi } from './fetchFromApi';
 import { abbreviateNumber } from 'js-abbreviation-number';
 
-const VideoCard = ({video}) => {
+const VideoCard = ({video,theme}) => {
     // console.log(video)
     const [videoDetails,setVideoDetails] = useState(null)
     const [loading,setLoading] = useState(true)
@@ -17,7 +17,7 @@ const VideoCard = ({video}) => {
     const views = videoDetails?.statistics?.viewCount
     const channelId = video?.snippet?.channelId ;
     const videoTitle = video?.snippet?.title
-    const styles = JSON.parse(localStorage.getItem('theme')) === 'light' ? 'hover:text-black' : 'hover:text-white' ;
+    const styles = theme === 'light' ? 'hover:text-black' : 'hover:text-white' ;
     // console.log(videoId)
 
     useEffect(()=>{
