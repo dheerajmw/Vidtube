@@ -1,13 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Pathway+Gothic+One&family=Roboto:wght@400;500;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+margin: 0;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+"Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+"Helvetica Neue", sans-serif;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+padding: 0;
+max-width: 100vw;
+box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root {
+height: 100vh;
+max-width: 100vw;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
+
+
+/* *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+} */
+
+code {
+font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+}
+.font-gothic {
+        font-family: 'Pathway Gothic One', sans-serif;
+
+}
+
+
+#root::-webkit-scrollbar{
+        display: none;
+}
+#root::-webkit-scrollbar-thumb{
+        width: 5px;
+        height: 20px;
+        background: red;
+}
+
