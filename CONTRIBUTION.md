@@ -6,9 +6,9 @@ Welcome to the Vidtube project! We are excited to have you contribute to this Yo
 
 - Fork the repository on GitHub
 - Clone the repository to your local machine using `git clone https://github.com/<your-username>/Vidtube.git`
-- Navigate to the project directory using cd Vidtube
-- Install the required dependencies using npm install or yarn install
-- Start the development server using npm start or yarn start
+- Navigate to the project directory using `cd Vidtube`
+- Install the required dependencies using `npm install or yarn install`
+- Start the development server using `npm start` or `yarn start`
 
 
 ## **Code of Conduct**
@@ -19,10 +19,10 @@ Please read and follow the Code of Conduct in the Vidtube repository.
 
 If you encounter any bugs or issues while using Vidtube, you can report them by creating a new issue in the Vidtube repository. When creating a new issue, please provide the following information:
 
-- A clear and concise description of the problem
-- Steps to reproduce the issue
-- Screenshots or videos if possible
-- Any additional information that may be helpful in resolving the issue
+- A clear and concise description of the problem.
+- Steps to reproduce the issue.
+- Screenshots or videos if possible.
+- Any additional information that may be helpful in resolving the issue.
 
 ## **Making Changes**
 
