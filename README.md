@@ -15,7 +15,7 @@ Vidtube is a fully responsive YouTube clone web app with dark mode functionality
 
 - ReactJS
 - Firebase
-- Bootstrap
+- Tailwind CSS
 - CSS
 - JavaScript
 
